@@ -1,0 +1,604 @@
+{
+  "recorded_at": "2026-11-19T12:11:01.334Z",
+  "node": "v22.23.4",
+  "marketplace": "amazon.com",
+  "headless": true,
+  "proxy": false,
+  "results": [
+    {
+      "endpoint": "amazon-search",
+      "input": {
+        "query": "wireless headphones",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 2761,
+      "sample": {
+        "id": "B0HFM63KVW",
+        "asin": "B0HFM63KVW",
+        "title": "Hybrid Active Noise Cancelling Bluetooth Headphones Wireless Headphones",
+        "name": "Hybrid Active Noise Cancelling Bluetooth Headphones Wireless Headphones",
+        "link": "https://www.amazon.com/dp/B0HFM63KVW",
+        "images": [
+          "https://m.media-amazon.com/images/I/610B9+2JRvL._AC_UY218_.jpg"
+        ],
+        "tags": [
+          "Overall Pick Overall Pick"
+        ],
+        "numberOfReviews": 753,
+        "is_sponsored": false,
+        "url": "https://www.amazon.com/dp/B0HFM63KVW",
+        "price": "THB 966.95",
+        "price_amount": "966.95",
+        "price_currency": "THB",
+        "list_price": "THB 10,181.65",
+        "rating": 4.4,
+        "image_url": "https://m.media-amazon.com/images/I/610B9+2JRvL._AC_UY218_.jpg",
+        "deal_badge": "Overall Pick Overall Pick",
+        "rank": null,
+        "sales_rank": null,
+        "previous_sales_rank": null,
+        "rank_change_percent": null
+      },
+      "metadata": {
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      },
+      "pagination": {
+        "outcome": "passed",
+        "count": 2
+      }
+    },
+    {
+      "endpoint": "amazon-asin",
+      "input": {
+        "asin": "B0C3HCD34R"
+      },
+      "outcome": "passed",
+      "count": 1,
+      "duration_ms": 3100,
+      "sample": {
+        "id": "B0C3HCD34R",
+        "asin": "B0C3HCD34R",
+        "url": "https://www.amazon.com/dp/B0C3HCD34R",
+        "title": "soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones, Black",
+        "description": "About this item \ud835\uddd5\ud835\uddf9\ud835\uddfc\ud835\uddf0\ud835\uddf8 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddea\ud835\uddfc\ud835\uddff\ud835\uddf9\ud835\uddf1, \ud835\uddde\ud835\uddf2\ud835\uddf2\ud835\uddfd \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\udde0\ud835\ude02\ud835\ude00\ud835\uddf6\ud835\uddf0: Four built-in mics work together to filter out background noise \u2014 whether you're in a packed office, on a crowded commute, or moving through a busy street \u2014 so every beat comes through clean and clear. (Not available in AUX-in mode.) \ud835\udde7\ud835\ude04\ud835\uddfc \ud835\uddea\ud835\uddee\ud835\ude06\ud835\ude00 \ud835\ude01\ud835\uddfc \ud835\udddb\ud835\uddf2\ud835\uddee\ud835\uddff \ud835\udde0\ud835\uddfc\ud835\uddff\ud835\uddf2: BassUp technology delivers deep, punchy bass and crisp highs in wireless mode \u2014 then step it up further by plugging in the included AUX cable to unlock Hi\u2011Res certified audio for studio-level clarity. \ud835\udff0\ud835\udfec \ud835\udddb\ud835\uddfc\ud835\ude02\ud835\uddff\ud835\ude00. \ud835\udff1-\ud835\udde0\ud835\uddf6\ud835\uddfb\ud835\ude02\ud835\ude01\ud835\uddf2 \ud835\udde7\ud835\uddfc\ud835\uddfd-\ud835\udde8\ud835\uddfd: With ANC on, a single charge keeps you listening through days of commutes and long-haul flights. Running low? Just 5 minutes plugged in gives you 4 more hours \u2014 so you're never stuck waiting. \ud835\udde7\ud835\ude04\ud835\uddfc \ud835\uddd7\ud835\uddf2\ud835\ude03\ud835\uddf6\ud835\uddf0\ud835\uddf2\ud835\ude00, \ud835\udded\ud835\uddf2\ud835\uddff\ud835\uddfc \ud835\udddb\ud835\uddee\ud835\ude00\ud835\ude00\ud835\uddf9\ud835\uddf2: Stay connected to your laptop and phone at the same time. Audio switches automatically to whichever device needs you \u2014 so a call never interrupts your flow, and getting back to your playlist is just as easy. Designed for commuters and remote workers who move smoothly between work and personal listening throughout the day. \ud835\uddec\ud835\uddfc\ud835\ude02\ud835\uddff \ud835\udde6\ud835\uddfc\ud835\ude02\ud835\uddfb\ud835\uddf1, \ud835\uddec\ud835\uddfc\ud835\ude02\ud835\uddff \ud835\udde5\ud835\ude02\ud835\uddf9\ud835\uddf2\ud835\ude00: The soundcore app puts everything at your fingertips \u2014 dials your ideal EQ with presets or build your own, flip between ANC, Normal, and Transparency modes on the fly, or wind down with built-in white noise. One app, total control. \ud835\udddb\ud835\uddf2\ud835\uddee\ud835\uddff \ud835\uddea\ud835\uddf5\ud835\uddee\ud835\ude01 \ud835\udde0\ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf2\ud835\uddff\ud835\ude00, \ud835\uddea\ud835\uddf5\ud835\uddf2\ud835\uddfb \ud835\udddc\ud835\ude01 \ud835\udde0\ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf2\ud835\uddff\ud835\ude00: Transparency mode blends your surroundings into your listening \u2014 catch a train announcement, respond to a colleague, or navigate busy streets without ever taking your earphones off. \ud835\ude00\ud835\uddfc\ud835\ude02\ud835\uddfb\ud835\uddf1\ud835\uddf0\ud835\uddfc\ud835\uddff\ud835\uddf2 \ud835\uddd4\ud835\uddfd\ud835\uddfd \ud835\udde6\ud835\ude02\ud835\uddfd\ud835\uddfd\ud835\uddfc\ud835\uddff\ud835\ude01: Download the soundcore app for software updates and access to available features. Personalize your listening with HearID, EQ modes, Spatial Audio, and adjustable ANC settings. OTA firmware updates help keep your headphones updated. \u203a See more product details",
+        "price": null,
+        "price_amount": null,
+        "price_currency": null,
+        "availability": null,
+        "availability_text": "This item cannot be shipped to your selected delivery location. Please choose a different delivery location.",
+        "rating": 4.5,
+        "review_count": 80294,
+        "image_url": "https://m.media-amazon.com/images/I/31+TBfMs9DL._AC_US40_.jpg",
+        "image_urls": [
+          "https://m.media-amazon.com/images/I/31+TBfMs9DL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51fMev0eftL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51rrwsr5PTL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51uk6LRlRlL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51mI6znXd8L._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51F8qRzaAUL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/41YZyso6E4L.SS40_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg",
+          "https://m.media-amazon.com/images/I/71XBzSvq-NL._AC_SL1500_.jpg"
+        ],
+        "details": {
+          "Brand": "Soundcore",
+          "Color": "Black",
+          "Ear Placement": "Over Ear",
+          "Form Factor": "Over Ear",
+          "Impedance": "16 ohm"
+        },
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      },
+      "metadata": {
+        "id": "B0C3HCD34R",
+        "asin": "B0C3HCD34R",
+        "url": "https://www.amazon.com/dp/B0C3HCD34R",
+        "title": "soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones, Black",
+        "description": "About this item \ud835\uddd5\ud835\uddf9\ud835\uddfc\ud835\uddf0\ud835\uddf8 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddea\ud835\uddfc\ud835\uddff\ud835\uddf9\ud835\uddf1, \ud835\uddde\ud835\uddf2\ud835\uddf2\ud835\uddfd \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\udde0\ud835\ude02\ud835\ude00\ud835\uddf6\ud835\uddf0: Four built-in mics work together to filter out background noise \u2014 whether you're in a packed office, on a crowded commute, or moving through a busy street \u2014 so every beat comes through clean and clear. (Not available in AUX-in mode.) \ud835\udde7\ud835\ude04\ud835\uddfc \ud835\uddea\ud835\uddee\ud835\ude06\ud835\ude00 \ud835\ude01\ud835\uddfc \ud835\udddb\ud835\uddf2\ud835\uddee\ud835\uddff \ud835\udde0\ud835\uddfc\ud835\uddff\ud835\uddf2: BassUp technology delivers deep, punchy bass and crisp highs in wireless mode \u2014 then step it up further by plugging in the included AUX cable to unlock Hi\u2011Res certified audio for studio-level clarity. \ud835\udff0\ud835\udfec \ud835\udddb\ud835\uddfc\ud835\ude02\ud835\uddff\ud835\ude00. \ud835\udff1-\ud835\udde0\ud835\uddf6\ud835\uddfb\ud835\ude02\ud835\ude01\ud835\uddf2 \ud835\udde7\ud835\uddfc\ud835\uddfd-\ud835\udde8\ud835\uddfd: With ANC on, a single charge keeps you listening through days of commutes and long-haul flights. Running low? Just 5 minutes plugged in gives you 4 more hours \u2014 so you're never stuck waiting. \ud835\udde7\ud835\ude04\ud835\uddfc \ud835\uddd7\ud835\uddf2\ud835\ude03\ud835\uddf6\ud835\uddf0\ud835\uddf2\ud835\ude00, \ud835\udded\ud835\uddf2\ud835\uddff\ud835\uddfc \ud835\udddb\ud835\uddee\ud835\ude00\ud835\ude00\ud835\uddf9\ud835\uddf2: Stay connected to your laptop and phone at the same time. Audio switches automatically to whichever device needs you \u2014 so a call never interrupts your flow, and getting back to your playlist is just as easy. Designed for commuters and remote workers who move smoothly between work and personal listening throughout the day. \ud835\uddec\ud835\uddfc\ud835\ude02\ud835\uddff \ud835\udde6\ud835\uddfc\ud835\ude02\ud835\uddfb\ud835\uddf1, \ud835\uddec\ud835\uddfc\ud835\ude02\ud835\uddff \ud835\udde5\ud835\ude02\ud835\uddf9\ud835\uddf2\ud835\ude00: The soundcore app puts everything at your fingertips \u2014 dials your ideal EQ with presets or build your own, flip between ANC, Normal, and Transparency modes on the fly, or wind down with built-in white noise. One app, total control. \ud835\udddb\ud835\uddf2\ud835\uddee\ud835\uddff \ud835\uddea\ud835\uddf5\ud835\uddee\ud835\ude01 \ud835\udde0\ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf2\ud835\uddff\ud835\ude00, \ud835\uddea\ud835\uddf5\ud835\uddf2\ud835\uddfb \ud835\udddc\ud835\ude01 \ud835\udde0\ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf2\ud835\uddff\ud835\ude00: Transparency mode blends your surroundings into your listening \u2014 catch a train announcement, respond to a colleague, or navigate busy streets without ever taking your earphones off. \ud835\ude00\ud835\uddfc\ud835\ude02\ud835\uddfb\ud835\uddf1\ud835\uddf0\ud835\uddfc\ud835\uddff\ud835\uddf2 \ud835\uddd4\ud835\uddfd\ud835\uddfd \ud835\udde6\ud835\ude02\ud835\uddfd\ud835\uddfd\ud835\uddfc\ud835\uddff\ud835\ude01: Download the soundcore app for software updates and access to available features. Personalize your listening with HearID, EQ modes, Spatial Audio, and adjustable ANC settings. OTA firmware updates help keep your headphones updated. \u203a See more product details",
+        "price": null,
+        "price_amount": null,
+        "price_currency": null,
+        "availability": null,
+        "availability_text": "This item cannot be shipped to your selected delivery location. Please choose a different delivery location.",
+        "rating": 4.5,
+        "review_count": 80294,
+        "image_url": "https://m.media-amazon.com/images/I/31+TBfMs9DL._AC_US40_.jpg",
+        "image_urls": [
+          "https://m.media-amazon.com/images/I/31+TBfMs9DL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51fMev0eftL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51rrwsr5PTL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51uk6LRlRlL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51mI6znXd8L._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51F8qRzaAUL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/41YZyso6E4L.SS40_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg",
+          "https://m.media-amazon.com/images/I/71XBzSvq-NL._AC_SL1500_.jpg"
+        ],
+        "details": {
+          "Brand": "Soundcore",
+          "Color": "Black",
+          "Ear Placement": "Over Ear",
+          "Form Factor": "Over Ear",
+          "Impedance": "16 ohm"
+        },
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      }
+    },
+    {
+      "endpoint": "amazon-price",
+      "input": {
+        "asin": "B0C3HCD34R"
+      },
+      "outcome": "passed",
+      "count": 1,
+      "duration_ms": 9189,
+      "sample": {
+        "id": "B0C3HCD34R",
+        "asin": "B0C3HCD34R",
+        "url": "https://www.amazon.com/dp/B0C3HCD34R",
+        "title": "soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones, Black",
+        "description": "About this item \ud835\uddd5\ud835\uddf9\ud835\uddfc\ud835\uddf0\ud835\uddf8 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddea\ud835\uddfc\ud835\uddff\ud835\uddf9\ud835\uddf1, \ud835\uddde\ud835\uddf2\ud835\uddf2\ud835\uddfd \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\udde0\ud835\ude02\ud835\ude00\ud835\uddf6\ud835\uddf0: Four built-in mics work together to filter out background noise \u2014 whether you're in a packed office, on a crowded commute, or moving through a busy street \u2014 so every beat comes through clean and clear. (Not available in AUX-in mode.) \ud835\udde7\ud835\ude04\ud835\uddfc \ud835\uddea\ud835\uddee\ud835\ude06\ud835\ude00 \ud835\ude01\ud835\uddfc \ud835\udddb\ud835\uddf2\ud835\uddee\ud835\uddff \ud835\udde0\ud835\uddfc\ud835\uddff\ud835\uddf2: BassUp technology delivers deep, punchy bass and crisp highs in wireless mode \u2014 then step it up further by plugging in the included AUX cable to unlock Hi\u2011Res certified audio for studio-level clarity. \ud835\udff0\ud835\udfec \ud835\udddb\ud835\uddfc\ud835\ude02\ud835\uddff\ud835\ude00. \ud835\udff1-\ud835\udde0\ud835\uddf6\ud835\uddfb\ud835\ude02\ud835\ude01\ud835\uddf2 \ud835\udde7\ud835\uddfc\ud835\uddfd-\ud835\udde8\ud835\uddfd: With ANC on, a single charge keeps you listening through days of commutes and long-haul flights. Running low? Just 5 minutes plugged in gives you 4 more hours \u2014 so you're never stuck waiting. \ud835\udde7\ud835\ude04\ud835\uddfc \ud835\uddd7\ud835\uddf2\ud835\ude03\ud835\uddf6\ud835\uddf0\ud835\uddf2\ud835\ude00, \ud835\udded\ud835\uddf2\ud835\uddff\ud835\uddfc \ud835\udddb\ud835\uddee\ud835\ude00\ud835\ude00\ud835\uddf9\ud835\uddf2: Stay connected to your laptop and phone at the same time. Audio switches automatically to whichever device needs you \u2014 so a call never interrupts your flow, and getting back to your playlist is just as easy. Designed for commuters and remote workers who move smoothly between work and personal listening throughout the day. \ud835\uddec\ud835\uddfc\ud835\ude02\ud835\uddff \ud835\udde6\ud835\uddfc\ud835\ude02\ud835\uddfb\ud835\uddf1, \ud835\uddec\ud835\uddfc\ud835\ude02\ud835\uddff \ud835\udde5\ud835\ude02\ud835\uddf9\ud835\uddf2\ud835\ude00: The soundcore app puts everything at your fingertips \u2014 dials your ideal EQ with presets or build your own, flip between ANC, Normal, and Transparency modes on the fly, or wind down with built-in white noise. One app, total control. \ud835\udddb\ud835\uddf2\ud835\uddee\ud835\uddff \ud835\uddea\ud835\uddf5\ud835\uddee\ud835\ude01 \ud835\udde0\ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf2\ud835\uddff\ud835\ude00, \ud835\uddea\ud835\uddf5\ud835\uddf2\ud835\uddfb \ud835\udddc\ud835\ude01 \ud835\udde0\ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf2\ud835\uddff\ud835\ude00: Transparency mode blends your surroundings into your listening \u2014 catch a train announcement, respond to a colleague, or navigate busy streets without ever taking your earphones off. \ud835\ude00\ud835\uddfc\ud835\ude02\ud835\uddfb\ud835\uddf1\ud835\uddf0\ud835\uddfc\ud835\uddff\ud835\uddf2 \ud835\uddd4\ud835\uddfd\ud835\uddfd \ud835\udde6\ud835\ude02\ud835\uddfd\ud835\uddfd\ud835\uddfc\ud835\uddff\ud835\ude01: Download the soundcore app for software updates and access to available features. Personalize your listening with HearID, EQ modes, Spatial Audio, and adjustable ANC settings. OTA firmware updates help keep your headphones updated. \u203a See more product details",
+        "price": null,
+        "price_amount": null,
+        "price_currency": null,
+        "availability": null,
+        "availability_text": "This item cannot be shipped to your selected delivery location. Please choose a different delivery location.",
+        "rating": 4.5,
+        "review_count": 80294,
+        "image_url": "https://m.media-amazon.com/images/I/31+TBfMs9DL._AC_US40_.jpg",
+        "image_urls": [
+          "https://m.media-amazon.com/images/I/31+TBfMs9DL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51fMev0eftL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51rrwsr5PTL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51uk6LRlRlL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51mI6znXd8L._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51F8qRzaAUL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/41YZyso6E4L.SS40_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg",
+          "https://m.media-amazon.com/images/I/71XBzSvq-NL._AC_SL1500_.jpg"
+        ],
+        "details": {
+          "Brand": "Soundcore",
+          "Color": "Black",
+          "Ear Placement": "Over Ear",
+          "Form Factor": "Over Ear",
+          "Impedance": "16 ohm"
+        },
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      },
+      "metadata": {
+        "id": "B0C3HCD34R",
+        "asin": "B0C3HCD34R",
+        "url": "https://www.amazon.com/dp/B0C3HCD34R",
+        "title": "soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones, Black",
+        "description": "About this item \ud835\uddd5\ud835\uddf9\ud835\uddfc\ud835\uddf0\ud835\uddf8 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddea\ud835\uddfc\ud835\uddff\ud835\uddf9\ud835\uddf1, \ud835\uddde\ud835\uddf2\ud835\uddf2\ud835\uddfd \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\udde0\ud835\ude02\ud835\ude00\ud835\uddf6\ud835\uddf0: Four built-in mics work together to filter out background noise \u2014 whether you're in a packed office, on a crowded commute, or moving through a busy street \u2014 so every beat comes through clean and clear. (Not available in AUX-in mode.) \ud835\udde7\ud835\ude04\ud835\uddfc \ud835\uddea\ud835\uddee\ud835\ude06\ud835\ude00 \ud835\ude01\ud835\uddfc \ud835\udddb\ud835\uddf2\ud835\uddee\ud835\uddff \ud835\udde0\ud835\uddfc\ud835\uddff\ud835\uddf2: BassUp technology delivers deep, punchy bass and crisp highs in wireless mode \u2014 then step it up further by plugging in the included AUX cable to unlock Hi\u2011Res certified audio for studio-level clarity. \ud835\udff0\ud835\udfec \ud835\udddb\ud835\uddfc\ud835\ude02\ud835\uddff\ud835\ude00. \ud835\udff1-\ud835\udde0\ud835\uddf6\ud835\uddfb\ud835\ude02\ud835\ude01\ud835\uddf2 \ud835\udde7\ud835\uddfc\ud835\uddfd-\ud835\udde8\ud835\uddfd: With ANC on, a single charge keeps you listening through days of commutes and long-haul flights. Running low? Just 5 minutes plugged in gives you 4 more hours \u2014 so you're never stuck waiting. \ud835\udde7\ud835\ude04\ud835\uddfc \ud835\uddd7\ud835\uddf2\ud835\ude03\ud835\uddf6\ud835\uddf0\ud835\uddf2\ud835\ude00, \ud835\udded\ud835\uddf2\ud835\uddff\ud835\uddfc \ud835\udddb\ud835\uddee\ud835\ude00\ud835\ude00\ud835\uddf9\ud835\uddf2: Stay connected to your laptop and phone at the same time. Audio switches automatically to whichever device needs you \u2014 so a call never interrupts your flow, and getting back to your playlist is just as easy. Designed for commuters and remote workers who move smoothly between work and personal listening throughout the day. \ud835\uddec\ud835\uddfc\ud835\ude02\ud835\uddff \ud835\udde6\ud835\uddfc\ud835\ude02\ud835\uddfb\ud835\uddf1, \ud835\uddec\ud835\uddfc\ud835\ude02\ud835\uddff \ud835\udde5\ud835\ude02\ud835\uddf9\ud835\uddf2\ud835\ude00: The soundcore app puts everything at your fingertips \u2014 dials your ideal EQ with presets or build your own, flip between ANC, Normal, and Transparency modes on the fly, or wind down with built-in white noise. One app, total control. \ud835\udddb\ud835\uddf2\ud835\uddee\ud835\uddff \ud835\uddea\ud835\uddf5\ud835\uddee\ud835\ude01 \ud835\udde0\ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf2\ud835\uddff\ud835\ude00, \ud835\uddea\ud835\uddf5\ud835\uddf2\ud835\uddfb \ud835\udddc\ud835\ude01 \ud835\udde0\ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf2\ud835\uddff\ud835\ude00: Transparency mode blends your surroundings into your listening \u2014 catch a train announcement, respond to a colleague, or navigate busy streets without ever taking your earphones off. \ud835\ude00\ud835\uddfc\ud835\ude02\ud835\uddfb\ud835\uddf1\ud835\uddf0\ud835\uddfc\ud835\uddff\ud835\uddf2 \ud835\uddd4\ud835\uddfd\ud835\uddfd \ud835\udde6\ud835\ude02\ud835\uddfd\ud835\uddfd\ud835\uddfc\ud835\uddff\ud835\ude01: Download the soundcore app for software updates and access to available features. Personalize your listening with HearID, EQ modes, Spatial Audio, and adjustable ANC settings. OTA firmware updates help keep your headphones updated. \u203a See more product details",
+        "price": null,
+        "price_amount": null,
+        "price_currency": null,
+        "availability": null,
+        "availability_text": "This item cannot be shipped to your selected delivery location. Please choose a different delivery location.",
+        "rating": 4.5,
+        "review_count": 80294,
+        "image_url": "https://m.media-amazon.com/images/I/31+TBfMs9DL._AC_US40_.jpg",
+        "image_urls": [
+          "https://m.media-amazon.com/images/I/31+TBfMs9DL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51fMev0eftL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51rrwsr5PTL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51uk6LRlRlL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51mI6znXd8L._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51F8qRzaAUL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/41YZyso6E4L.SS40_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg",
+          "https://m.media-amazon.com/images/I/71XBzSvq-NL._AC_SL1500_.jpg"
+        ],
+        "details": {
+          "Brand": "Soundcore",
+          "Color": "Black",
+          "Ear Placement": "Over Ear",
+          "Form Factor": "Over Ear",
+          "Impedance": "16 ohm"
+        },
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      }
+    },
+    {
+      "endpoint": "amazon-best-sellers",
+      "input": {
+        "category": "electronics",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 14025,
+      "sample": {
+        "id": "B08JHCVHTY",
+        "asin": "B08JHCVHTY",
+        "title": "blink plus plan with monthly auto-renewal",
+        "name": "blink plus plan with monthly auto-renewal",
+        "link": "https://www.amazon.com/dp/B08JHCVHTY",
+        "images": [
+          "https://images-na.ssl-images-amazon.com/images/I/31YHGbJsldL._AC_UL300_SR300,200_.png"
+        ],
+        "tags": [],
+        "numberOfReviews": 4,
+        "is_sponsored": false,
+        "url": "https://www.amazon.com/dp/B08JHCVHTY",
+        "price": "THB 406.94",
+        "price_amount": "406.94",
+        "price_currency": "THB",
+        "list_price": null,
+        "rating": 4.4,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/31YHGbJsldL._AC_UL300_SR300,200_.png",
+        "deal_badge": null,
+        "rank": 1,
+        "sales_rank": null,
+        "previous_sales_rank": null,
+        "rank_change_percent": null
+      },
+      "metadata": {
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      }
+    },
+    {
+      "endpoint": "amazon-deals",
+      "input": {
+        "query": "coffee grinder",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 0,
+      "duration_ms": 22717,
+      "sample": null,
+      "metadata": {
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      }
+    },
+    {
+      "endpoint": "amazon-product-offers",
+      "input": {
+        "asin": "B0C3HCD34R",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 1,
+      "duration_ms": 7368,
+      "sample": {
+        "seller_id": null,
+        "seller_name": null,
+        "seller_url": null,
+        "ships_from": null,
+        "condition": null,
+        "condition_notes": null,
+        "price": null,
+        "shipping_price": null,
+        "shipping_text": null,
+        "is_featured_offer": true,
+        "seller_rating_text": null,
+        "price_amount": null,
+        "price_currency": null,
+        "asin": "B0C3HCD34R",
+        "shipping_amount": null,
+        "total_amount": null,
+        "marketplace": "amazon.com",
+        "id": "offer-38f460e7"
+      },
+      "metadata": {
+        "asin": "B0C3HCD34R",
+        "total_offers": 0,
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      }
+    },
+    {
+      "endpoint": "amazon-product-variations",
+      "input": {
+        "asin": "B0C3HCD34R",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 9560,
+      "sample": {
+        "id": "B0HJQTBNHV",
+        "asin": "B0HJQTBNHV",
+        "url": "https://www.amazon.com/dp/B0HJQTBNHV",
+        "parent_asin": "B0GXLK9S35",
+        "attributes": {
+          "color_name": "Black",
+          "size_name": "Standard",
+          "style_name": "Headphones with Case"
+        },
+        "is_selected": false,
+        "title": null,
+        "price": null,
+        "price_amount": null,
+        "price_currency": null,
+        "availability": null,
+        "image_url": null
+      },
+      "metadata": {
+        "parent_asin": "B0GXLK9S35",
+        "dimensions": [
+          "color_name",
+          "size_name",
+          "style_name"
+        ],
+        "has_variations": true,
+        "total_variations": 10,
+        "errors": [],
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      }
+    },
+    {
+      "endpoint": "amazon-products-batch",
+      "input": {
+        "asins": [
+          "B0C3HCD34R",
+          "B085DV8T75"
+        ]
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 9619,
+      "sample": {
+        "id": "B0C3HCD34R",
+        "asin": "B0C3HCD34R",
+        "url": "https://www.amazon.com/dp/B0C3HCD34R",
+        "title": "soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones, Black",
+        "description": "About this item \ud835\uddd5\ud835\uddf9\ud835\uddfc\ud835\uddf0\ud835\uddf8 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddea\ud835\uddfc\ud835\uddff\ud835\uddf9\ud835\uddf1, \ud835\uddde\ud835\uddf2\ud835\uddf2\ud835\uddfd \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\udde0\ud835\ude02\ud835\ude00\ud835\uddf6\ud835\uddf0: Four built-in mics work together to filter out background noise \u2014 whether you're in a packed office, on a crowded commute, or moving through a busy street \u2014 so every beat comes through clean and clear. (Not available in AUX-in mode.) \ud835\udde7\ud835\ude04\ud835\uddfc \ud835\uddea\ud835\uddee\ud835\ude06\ud835\ude00 \ud835\ude01\ud835\uddfc \ud835\udddb\ud835\uddf2\ud835\uddee\ud835\uddff \ud835\udde0\ud835\uddfc\ud835\uddff\ud835\uddf2: BassUp technology delivers deep, punchy bass and crisp highs in wireless mode \u2014 then step it up further by plugging in the included AUX cable to unlock Hi\u2011Res certified audio for studio-level clarity. \ud835\udff0\ud835\udfec \ud835\udddb\ud835\uddfc\ud835\ude02\ud835\uddff\ud835\ude00. \ud835\udff1-\ud835\udde0\ud835\uddf6\ud835\uddfb\ud835\ude02\ud835\ude01\ud835\uddf2 \ud835\udde7\ud835\uddfc\ud835\uddfd-\ud835\udde8\ud835\uddfd: With ANC on, a single charge keeps you listening through days of commutes and long-haul flights. Running low? Just 5 minutes plugged in gives you 4 more hours \u2014 so you're never stuck waiting. \ud835\udde7\ud835\ude04\ud835\uddfc \ud835\uddd7\ud835\uddf2\ud835\ude03\ud835\uddf6\ud835\uddf0\ud835\uddf2\ud835\ude00, \ud835\udded\ud835\uddf2\ud835\uddff\ud835\uddfc \ud835\udddb\ud835\uddee\ud835\ude00\ud835\ude00\ud835\uddf9\ud835\uddf2: Stay connected to your laptop and phone at the same time. Audio switches automatically to whichever device needs you \u2014 so a call never interrupts your flow, and getting back to your playlist is just as easy. Designed for commuters and remote workers who move smoothly between work and personal listening throughout the day. \ud835\uddec\ud835\uddfc\ud835\ude02\ud835\uddff \ud835\udde6\ud835\uddfc\ud835\ude02\ud835\uddfb\ud835\uddf1, \ud835\uddec\ud835\uddfc\ud835\ude02\ud835\uddff \ud835\udde5\ud835\ude02\ud835\uddf9\ud835\uddf2\ud835\ude00: The soundcore app puts everything at your fingertips \u2014 dials your ideal EQ with presets or build your own, flip between ANC, Normal, and Transparency modes on the fly, or wind down with built-in white noise. One app, total control. \ud835\udddb\ud835\uddf2\ud835\uddee\ud835\uddff \ud835\uddea\ud835\uddf5\ud835\uddee\ud835\ude01 \ud835\udde0\ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf2\ud835\uddff\ud835\ude00, \ud835\uddea\ud835\uddf5\ud835\uddf2\ud835\uddfb \ud835\udddc\ud835\ude01 \ud835\udde0\ud835\uddee\ud835\ude01\ud835\ude01\ud835\uddf2\ud835\uddff\ud835\ude00: Transparency mode blends your surroundings into your listening \u2014 catch a train announcement, respond to a colleague, or navigate busy streets without ever taking your earphones off. \ud835\ude00\ud835\uddfc\ud835\ude02\ud835\uddfb\ud835\uddf1\ud835\uddf0\ud835\uddfc\ud835\uddff\ud835\uddf2 \ud835\uddd4\ud835\uddfd\ud835\uddfd \ud835\udde6\ud835\ude02\ud835\uddfd\ud835\uddfd\ud835\uddfc\ud835\uddff\ud835\ude01: Download the soundcore app for software updates and access to available features. Personalize your listening with HearID, EQ modes, Spatial Audio, and adjustable ANC settings. OTA firmware updates help keep your headphones updated. \u203a See more product details",
+        "price": null,
+        "price_amount": null,
+        "price_currency": null,
+        "availability": null,
+        "availability_text": "This item cannot be shipped to your selected delivery location. Please choose a different delivery location.",
+        "rating": 4.5,
+        "review_count": 80294,
+        "image_url": "https://m.media-amazon.com/images/I/31+TBfMs9DL._AC_US40_.jpg",
+        "image_urls": [
+          "https://m.media-amazon.com/images/I/31+TBfMs9DL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51fMev0eftL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51rrwsr5PTL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51uk6LRlRlL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51mI6znXd8L._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/51F8qRzaAUL._AC_US40_.jpg",
+          "https://m.media-amazon.com/images/I/41YZyso6E4L.SS40_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg",
+          "https://m.media-amazon.com/images/I/71XBzSvq-NL._AC_SL1500_.jpg"
+        ],
+        "details": {
+          "Brand": "Soundcore",
+          "Color": "Black",
+          "Ear Placement": "Over Ear",
+          "Form Factor": "Over Ear",
+          "Impedance": "16 ohm"
+        },
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      },
+      "metadata": {
+        "requested": 2,
+        "succeeded": 2,
+        "failed": 0,
+        "errors": [],
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      }
+    },
+    {
+      "endpoint": "amazon-movers-and-shakers",
+      "input": {
+        "category": "electronics",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 0,
+      "duration_ms": 2916,
+      "sample": null,
+      "metadata": {
+        "notice": "Amazon currently exposes no entries for this category.",
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      }
+    },
+    {
+      "endpoint": "amazon-new-releases",
+      "input": {
+        "category": "electronics",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 1893,
+      "sample": {
+        "id": "B0HJ9ZXCSD",
+        "asin": "B0HJ9ZXCSD",
+        "title": "Apple Watch Series 12 GPS 42mm Smartwatch | Light Gold Aluminum Case, Sand Sport Band - S/M. Health + Fitness + Sleep Tracking, Heart Rate, Safety",
+        "name": "Apple Watch Series 12 GPS 42mm Smartwatch | Light Gold Aluminum Case, Sand Sport Band - S/M. Health + Fitness + Sleep Tracking, Heart Rate, Safety",
+        "link": "https://www.amazon.com/dp/B0HJ9ZXCSD",
+        "images": [
+          "https://images-na.ssl-images-amazon.com/images/I/61YX4bH7zaL._AC_UL300_SR300,200_.jpg"
+        ],
+        "tags": [],
+        "numberOfReviews": 5,
+        "is_sponsored": false,
+        "url": "https://www.amazon.com/dp/B0HJ9ZXCSD",
+        "price": "THB10,38461",
+        "price_amount": "1038461.00",
+        "price_currency": "USD",
+        "list_price": null,
+        "rating": 4.8,
+        "image_url": "https://images-na.ssl-images-amazon.com/images/I/61YX4bH7zaL._AC_UL300_SR300,200_.jpg",
+        "deal_badge": null,
+        "rank": 1,
+        "sales_rank": null,
+        "previous_sales_rank": null,
+        "rank_change_percent": null
+      },
+      "metadata": {
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      }
+    },
+    {
+      "endpoint": "amazon-seller-products",
+      "input": {
+        "seller_id": "A294P4X9EWVXLJ",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 2215,
+      "sample": {
+        "id": "B0HFVMMFNT",
+        "asin": "B0HFVMMFNT",
+        "title": "Soundcore Work Adjustable Wearable Necklace for AI Voice Recorder, Black",
+        "name": "Soundcore Work Adjustable Wearable Necklace for AI Voice Recorder, Black",
+        "link": "https://www.amazon.com/dp/B0HFVMMFNT",
+        "images": [
+          "https://m.media-amazon.com/images/I/61xIFKOmOaL._AC_UY218_.jpg"
+        ],
+        "tags": [],
+        "numberOfReviews": 1,
+        "is_sponsored": false,
+        "url": "https://www.amazon.com/dp/B0HFVMMFNT",
+        "price": "THB 1,017.86",
+        "price_amount": "1017.86",
+        "price_currency": "THB",
+        "list_price": null,
+        "rating": 5,
+        "image_url": "https://m.media-amazon.com/images/I/61xIFKOmOaL._AC_UY218_.jpg",
+        "deal_badge": null,
+        "rank": null,
+        "sales_rank": null,
+        "previous_sales_rank": null,
+        "rank_change_percent": null
+      },
+      "metadata": {
+        "marketplace": "amazon.com",
+        "delivery_location": {
+          "postal_code": null,
+          "applied": false,
+          "displayed": "Deliver to Thailand"
+        }
+      }
+    },
+    {
+      "endpoint": "amazon-reviews",
+      "input": {
+        "asin": "B0C3HCD34R",
+        "limit": 2
+      },
+      "outcome": "failed",
+      "error": "Amazon requires sign-in to show customer reviews for this product.",
+      "duration_ms": 4624
+    }
+  ],
+  "test_environment": "macOS arm64; local Playwright Chromium 1.65.1; no Amazon account, API key, proxy or paid service",
+  "automated_tests": {
+    "passed": 54,
+    "failed": 0,
+    "network": "unmocked fixture requests are aborted"
+  },
+  "additional_checks": [
+    {
+      "endpoint": "amazon-deals",
+      "input": {
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "sample": {
+        "id": "B0G31KVQ1H",
+        "asin": "B0G31KVQ1H",
+        "title": "ASUS ROG PG32UCDM3 32 Inch 4K 240Hz Tandem OLED Gaming Monitor | OLED Care Pro, Display HDR 500, G-SYNC Compatible, USB-C 90W, Neo Proximity Sensor, for PS5 and Xbox",
+        "name": "ASUS ROG PG32UCDM3 32 Inch 4K 240Hz Tandem OLED Gaming Monitor | OLED Care Pro, Display HDR 500, G-SYNC Compatible, USB-C 90W, Neo Proximity Sensor, for PS5 and Xbox",
+        "link": "https://www.amazon.com/dp/B0G31KVQ1H",
+        "images": [
+          "https://m.media-amazon.com/images/I/91PC2B2t3OL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte"
+        ],
+        "tags": [
+          "Black Friday Deal"
+        ],
+        "numberOfReviews": 53,
+        "is_sponsored": false,
+        "url": "https://www.amazon.com/dp/B0G31KVQ1H",
+        "price": "Deal Price: THB 33,939.61",
+        "price_amount": "33939.61",
+        "price_currency": "THB",
+        "list_price": "List: THB 44,088.00",
+        "rating": 4.4,
+        "image_url": "https://m.media-amazon.com/images/I/91PC2B2t3OL._AC_SF226,226_QL85_.jpg?aicid=discounts-widgets-horizonte",
+        "deal_badge": "Black Friday Deal",
+        "rank": null,
+        "sales_rank": null,
+        "previous_sales_rank": null,
+        "rank_change_percent": null
+      }
+    },
+    {
+      "interface": "built CLI",
+      "outcome": "passed",
+      "checks": [
+        "real search JSON export",
+        "real search CSV export"
+      ]
+    }
+  ]
+}

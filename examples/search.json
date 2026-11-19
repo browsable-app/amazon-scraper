@@ -1,0 +1,7 @@
+{
+  "query": "wireless headphones",
+  "marketplace": "amazon.com",
+  "min_price": 20,
+  "max_price": 100,
+  "limit": 5
+}
