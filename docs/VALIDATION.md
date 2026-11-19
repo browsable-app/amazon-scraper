@@ -2,7 +2,7 @@
 
 Environment: macOS arm64, Node 22.23.4, Playwright 1.65.1, local headless Chromium. No Amazon account, API key, proxy or paid service was used.
 
-`npm run check`, `npm run build` and all **54 automated tests** passed. Fixture tests abort unmocked network requests. The runtime dependency audit reported no known vulnerabilities at this check.
+`npm run check`, `npm run build` and all **54 automated tests** passed. Fixture tests abort unmocked network requests. The runtime dependency audit reported no known vulnerabilities at this check. A fresh local clone also passed `npm ci`, type checking, build, all 54 tests, CLI endpoint listing and package-content checks.
 
 ## Real Amazon requests
 
