@@ -29,7 +29,8 @@ Also accepts full names (amazon-search) and paths (amazon/product/offers).
 --list            --help
 
 Optional user-supplied proxy: AMAZON_PROXY_SERVER, AMAZON_PROXY_USERNAME,
-AMAZON_PROXY_PASSWORD. No proxy, account or API key is required by default.
+AMAZON_PROXY_PASSWORD. No proxy or API key is required by default.
+Amazon may require sign-in for reviews.
 `;
 async function main() {
   const strings = ["query", "asin", "url", "marketplace", "postal-code", "limit", "page", "cursor", "category", "category-id", "brand", "min-price", "max-price", "min-rating", "sort", "seller-id", "seller-url", "condition", "asins", "input", "output", "format", "timeout-ms"];

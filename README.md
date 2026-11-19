@@ -2,7 +2,7 @@
 
 Scrape Amazon products, prices, offers, variants, product lists, sellers and public reviews with local Playwright Chromium.
 
-**Free source code, MIT licensed. No API key, account, hosted browser or paid service required.** All extraction code is included in this repository.
+**Free source code, MIT licensed. Runs locally without a Browsable account, API key, hosted browser or paid service.** All extraction code is included in this repository.
 
 ## Quick start
 
