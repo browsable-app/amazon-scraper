@@ -6,7 +6,7 @@ const kindle = { ...uk, asin: "B0CX8MQF7R" };
 const cases: [string, Record<string, unknown>][] = [
   ["amazon-search", { ...uk, query: "kindle", limit: 2 }],
   ["amazon-asin", kindle],
-  ["amazon-price", kindle],
+  ["amazon-price", { ...uk, asin: "139854809X" }],
   ["amazon-best-sellers", { category: "electronics", limit: 2 }],
   ["amazon-deals", { limit: 2 }],
   ["amazon-product-offers", { ...kindle, limit: 2 }],
@@ -27,6 +27,9 @@ for (const [endpoint, input] of selected) {
   try {
     const output = await scrape(endpoint, input, { timeoutMs: 60_000, headless: report.headless });
     if (!output.results.length) throw Error("Amazon returned no records for this smoke case");
+    if (endpoint === "amazon-price" && !output.results.some(row => row.price_amount && row.price_currency)) {
+      throw Error("Amazon returned no price amount and currency for this smoke case");
+    }
     const definition = amazonTaskDefinitions.find(d => d.builtin === endpoint);
     if (definition) {
       const check = validateJsonSchemaValue(definition.outputSchema, output);

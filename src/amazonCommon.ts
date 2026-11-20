@@ -52,7 +52,7 @@ export function amazonOrigin(market: AmazonMarketplace) {
 }
 export function amazonMoney(value: unknown, market: AmazonMarketplace): { amount: string | null; currency: string | null } {
   if (typeof value !== "string") return { amount: null, currency: null };
-  const currency = value.match(/\b(USD|GBP|CAD|EUR|JPY|INR|AUD|THB|CNY|SGD|HKD|AED|SAR|SEK|PLN|BRL|MXN|TRY)\b/i)?.[1]?.toUpperCase()
+  const currency = value.match(/(?<![a-z])(USD|GBP|CAD|EUR|JPY|INR|AUD|THB|CNY|SGD|HKD|AED|SAR|SEK|PLN|BRL|MXN|TRY)(?![a-z])/i)?.[1]?.toUpperCase()
     ?? (/US\$/.test(value) ? "USD" : /(?:CA|CDN)\$/.test(value) ? "CAD" : /A(?:U)?\$/.test(value) ? "AUD" : /£/.test(value) ? "GBP" : /€/.test(value) ? "EUR" : /₹/.test(value) ? "INR" : /฿/.test(value) ? "THB" : AMAZON_MARKETPLACES[market].currency);
   const match = value.replace(/[\s\u00a0\u202f]/g, "").match(/\d[\d.,]*/);
   if (!match) return { amount: null, currency: null };

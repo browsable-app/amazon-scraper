@@ -44,6 +44,7 @@ test("built CLI lists endpoints and invalid flags exit nonzero before browser st
 });
 
 test("displayed currency overrides marketplace defaults", () => {
+  assert.deepEqual(amazonMoney("THB494.09", "amazon.co.uk"), { amount: "494.09", currency: "THB" });
   assert.deepEqual(amazonMoney("THB 966.95", "amazon.com"), { amount: "966.95", currency: "THB" });
   assert.deepEqual(amazonMoney("US$29.99", "amazon.ca"), { amount: "29.99", currency: "USD" });
   assert.deepEqual(amazonMoney("฿1,234.56", "amazon.com"), { amount: "1234.56", currency: "THB" });

@@ -6,7 +6,7 @@ All ten current operations returned records and passed output schema validation 
 | --- | --- | --- |
 | Search | UK | Two products and two distinct continuation results |
 | Product details | UK | One requested product |
-| Price | UK | One requested product |
+| Price | UK | One requested product, with a separate check confirming the displayed THB 494.09 price and currency |
 | Best sellers | US | Two ranked products |
 | Deals | US | Two products from the default deals page |
 | Offers | UK | One offer |

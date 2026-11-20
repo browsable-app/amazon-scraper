@@ -4,6 +4,7 @@
 
 - Remove reviews and movers and shakers from the library and CLI after anonymous live checks produced no records.
 - Require non-empty results in live smoke tests for the ten retained operations.
+- Preserve the displayed currency when its code touches the price amount.
 
 ## 0.1.0
 

@@ -398,5 +398,17 @@
       "has_variations": true,
       "schema": true
     }
-  ]
+  ],
+  "price_retest": {
+    "endpoint": "amazon-price",
+    "input": {
+      "marketplace": "amazon.co.uk",
+      "asin": "139854809X"
+    },
+    "outcome": "passed",
+    "count": 1,
+    "price": "THB494.09",
+    "price_amount": "494.09",
+    "price_currency": "THB"
+  }
 }
