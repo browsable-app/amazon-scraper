@@ -29,7 +29,6 @@ export const AMAZON_PUBLIC_SOURCES = [
   "amazon-product-offers",
   "amazon-product-variations",
   "amazon-products-batch",
-  "amazon-movers-and-shakers",
   "amazon-new-releases",
   "amazon-seller-products",
 ] as const;
@@ -83,7 +82,7 @@ const departments: Record<string, string> = {
 export function amazonBestSellersUrl(
   category: string | null,
   market: AmazonMarketplace = "amazon.com",
-  kind: "best-sellers" | "movers-and-shakers" | "new-releases" = "best-sellers",
+  kind: "best-sellers" | "new-releases" = "best-sellers",
 ): string {
   const base = kind === "best-sellers" ? `${amazonOrigin(market)}/Best-Sellers/zgbs` : `${amazonOrigin(market)}/gp/${kind}`;
   if (!category?.trim()) return base;
@@ -195,7 +194,7 @@ export async function navigateAmazon(page: Page, url: string, selector: string):
       .waitForFunction(
         (selector) =>
           Boolean(document.querySelector(selector)) ||
-          /no results for|did not match any products|no results found|no movers\s*(?:and|&)\s*shakers(?:\s+are)?\s+available|no new releases(?:\s+are)?\s+available/i.test(
+          /no results for|did not match any products|no results found|no new releases(?:\s+are)?\s+available/i.test(
             document.body?.innerText || "",
           ),
         selector,
@@ -205,23 +204,12 @@ export async function navigateAmazon(page: Page, url: string, selector: string):
     const ready = await page.evaluate(
       (selector) =>
         Boolean(document.querySelector(selector)) ||
-        /no results for|did not match any products|no results found|no movers\s*(?:and|&)\s*shakers(?:\s+are)?\s+available|no new releases(?:\s+are)?\s+available/i.test(
+        /no results for|did not match any products|no results found|no new releases(?:\s+are)?\s+available/i.test(
           document.body?.innerText || "",
         ),
       selector,
     );
-    if (!ready) {
-      // The all-department Movers page sometimes exposes only its chart
-      // description. Preserve that genuine empty public page with a notice;
-      // arbitrary blank, blocked and unrelated pages must still fail.
-      const emptyMoversRoot = await page.evaluate(
-        () =>
-          /\/gp\/movers-and-shakers\/?$/.test(location.pathname) &&
-          /Movers\s*(?:and|&)\s*Shakers/i.test(document.title) &&
-          /About Movers\s*(?:and|&)\s*Shakers/i.test(document.body?.innerText ?? ""),
-      );
-      if (!emptyMoversRoot) throw new Error("Amazon page did not expose the expected product content");
-    }
+    if (!ready) throw new Error("Amazon page did not expose the expected product content");
     return;
   }
 }
@@ -691,13 +679,13 @@ export async function getAmazonPublic(page: Page, source: AmazonSource, raw: Ama
     }
   } else {
     const isOffers = source === "amazon-product-offers";
-    const isRanking = ["amazon-best-sellers", "amazon-movers-and-shakers", "amazon-new-releases"].includes(source);
+    const isRanking = ["amazon-best-sellers", "amazon-new-releases"].includes(source);
     const isDeals = source === "amazon-deals";
     if (source === "amazon-search" && !input.query) throw new Error("Amazon search requires query");
     if (source === "amazon-seller-products" && !input.seller_id) throw new Error("Amazon seller products requires seller_id");
     const productUrl = isOffers ? amazonProductUrl({ ...input, marketplace: market }) : null;
     const rankingKind =
-      source === "amazon-best-sellers" ? "best-sellers" : source === "amazon-movers-and-shakers" ? "movers-and-shakers" : "new-releases";
+      source === "amazon-best-sellers" ? "best-sellers" : "new-releases";
     const base = isOffers
       ? `${origin}/gp/product/ajax/aodAjaxMain?asin=${productUrl!.split("/").at(-1)}&pc=dp`
       : isRanking

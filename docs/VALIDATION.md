@@ -1,34 +1,25 @@
-# Local validation — 2026-11-19
+# Local validation for November 20, 2026
 
-Environment: macOS arm64, Node 22.23.4, Playwright 1.65.1, local headless Chromium. No Amazon account, API key, proxy or paid service was used.
+All ten current operations returned records and passed output schema validation using local headless Chromium on macOS arm64 with Node 22.23.4 and Playwright 1.65.1. The checks used no Amazon account, API key, proxy or paid service. Type checking, build, package-content checks and all 49 automated tests also passed.
 
-`npm run check`, `npm run build` and all **54 automated tests** passed. Fixture tests abort unmocked network requests. The runtime dependency audit reported no known vulnerabilities at this check. A fresh local clone also passed `npm ci`, type checking, build, all 54 tests, CLI endpoint listing and package-content checks.
+| Operation | Storefront | Live result |
+| --- | --- | --- |
+| Search | UK | Two products and two distinct continuation results |
+| Product details | UK | One requested product |
+| Price | UK | One requested product |
+| Best sellers | US | Two ranked products |
+| Deals | US | Two products from the default deals page |
+| Offers | UK | One offer |
+| Variations | UK | One row for the smoke-test product and two distinct variants in a separate check |
+| Batch | UK | Both requested products |
+| New releases | US | Two ranked products |
+| Seller products | UK | Two products |
 
-## Real Amazon requests
+The initial US-only run also encountered automated access checks and HTTP 503 responses. Alternative public inputs or the UK storefront produced data for operations affected by those failures. These results cover the tested inputs and storefronts. Access can vary by network, delivery location and time.
 
-| Operation | Observed outcome |
-| --- | --- |
-| Search | Two products; continuation returned distinct products |
-| Product details | Requested ASIN returned |
-| Price | Requested ASIN returned |
-| Best sellers | Two ranked products |
-| Deals, with query | Zero matching deal products for `coffee grinder` |
-| Deals, default page | Two products; Amazon redirected its deals page to the seasonal Black Friday page |
-| Offers | One seller offer |
-| Variations | Two distinct variants |
-| Batch | Both requested products returned |
-| Movers and shakers | Explicit upstream empty-category notice; no product rows |
-| New releases | Two products |
-| Seller products | Two products |
-| Reviews | Failed explicitly with `authentication_required`; the live product page said sign-in was required to see customer reviews |
+Two operations were removed. Reviews produced no review rows across two products. The initial US request returned HTTP 404 and the second hit an access check. The November 19 check also encountered a sign-in requirement. Movers and shakers returned zero rows for the US all-department, electronics, books and kitchen pages and for UK electronics.
 
-The built CLI also completed real search exports to JSON and CSV. Displayed THB prices were correctly reported as THB rather than inferred USD.
-
-Review extraction, review pagination, featured-review fallback and explicit sign-in failures passed fixture tests. **Anonymous live review extraction was not demonstrated from this environment.**
-
-The sample size is small. These checks establish local operation, not sustained reliability or validation of every filter. Other recognized marketplaces have not been validated live for this release. Empty deal and movers results do not prove non-empty extraction for those particular queries/categories; the separate default deals run did return products.
-
-Machine-readable evidence: [local-2026-11-19.json](validation/local-2026-11-19.json).
+[Evidence for the November 20 checks](validation/local-2026-11-20.json) · [Historical November 19 report data](validation/local-2026-11-19.json)
 
 ## Repeat the checks
 
@@ -41,4 +32,4 @@ npm test
 npm run smoke
 ```
 
-The smoke suite attempts every operation and checks returned schemas. It exits nonzero when any operation fails, including sign-in-only reviews. Results are written to `output/live-validation.json`; that directory is ignored by Git. Select cases with `npm run smoke -- --only=amazon-search`.
+The smoke suite requires a non-empty result from each sample and checks its schema. It exits nonzero if a sample fails and writes the results to `output/live-validation.json`. To run a single case, use `npm run smoke -- --only=amazon-search`.

@@ -1,6 +1,6 @@
 {
   "name": "@browsable/amazon-scraper",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Free, open-source Amazon scrapers using local Playwright. No API key or paid services required.",
   "type": "module",
   "license": "MIT",

@@ -39,9 +39,9 @@ function schema(source: AmazonSource, out: unknown) {
   assert.ok(result.valid, JSON.stringify(result.errors));
 }
 
-test("all 11 Amazon contracts have unique paths, canonical inputs and complete result schemas", () => {
-  assert.equal(amazonTaskDefinitions.length, 11);
-  assert.equal(new Set(amazonTaskDefinitions.map((d) => d.path)).size, 11);
+test("all 10 Amazon contracts have unique paths, canonical inputs and complete result schemas", () => {
+  assert.equal(amazonTaskDefinitions.length, 10);
+  assert.equal(new Set(amazonTaskDefinitions.map((d) => d.path)).size, 10);
   for (const def of amazonTaskDefinitions) {
     assert.equal(def.inputSchema.additionalProperties, false);
     assert.ok(def.inputSchema.properties.marketplace);
@@ -205,23 +205,17 @@ test("offers retain Featured Offer status, deduplicate repeats and avoid guessin
     schema("amazon-product-offers", out);
   }));
 
-test("new releases use their own list and Movers and Shakers preserves an explicit upstream empty state", async () =>
+test("new releases use their own list", async () =>
   withPage(async (page) => {
-    await page.route("https://www.amazon.com/gp/**", (route) =>
+    await page.route("https://www.amazon.com/gp/new-releases/**", (route) =>
       route.fulfill({
         contentType: "text/html",
-        body: route.request().url().includes("movers-and-shakers")
-          ? "<h1>Movers & Shakers</h1>Sorry, there are no movers and shakers available in this category."
-          : `<div class="zg-grid-general-faceout" data-asin="${asins[0]}"><a href="/dp/${asins[0]}"><div class="p13n-sc-css-line-clamp">New gadget</div></a>${htmlPrice("$44.99")}</div>`,
+        body: `<div class="zg-grid-general-faceout" data-asin="${asins[0]}"><a href="/dp/${asins[0]}"><div class="p13n-sc-css-line-clamp">New gadget</div></a>${htmlPrice("$44.99")}</div>`,
       }),
     );
     const news = await getPublicApiScraper(page, "amazon-new-releases", { category: "electronics", limit: 1 });
     assert.equal(news.count, 1);
     schema("amazon-new-releases", news);
-    const movers = await getPublicApiScraper(page, "amazon-movers-and-shakers", { category: "electronics" });
-    assert.equal(movers.count, 0);
-    assert.match(String(movers.data?.notice), /no entries/);
-    schema("amazon-movers-and-shakers", movers);
   }));
 
 test("marketplace search returns local links and correct currency with comma decimals", async () =>
@@ -509,25 +503,5 @@ test("new-release root carousels return actual ranked products", async () => {
     assert.equal(out.results[0]!.asin, "B0C3HCD34R");
     assert.equal(out.results[0]!.title, "Calendar");
     assert.equal(out.results[0]!.rank, 1);
-  });
-});
-
-test("the empty all-department Movers chart returns an explicit upstream notice", async () => {
-  await withPage(async (page) => {
-    await page.route("**/*", (route) =>
-      route.fulfill({
-        status: 200,
-        contentType: "text/html",
-        body: `<title>Amazon.com Movers &amp; Shakers</title><h1>Movers &amp; Shakers</h1><h2>About Movers &amp; Shakers</h2><p>Our biggest gainers in sales rank.</p>`,
-      }),
-    );
-    page.waitForFunction = (async () => {
-      throw Error("No cards appeared");
-    }) as any;
-    const out = await getPublicApiScraper(page, "amazon-movers-and-shakers", { limit: 2 });
-    schema("amazon-movers-and-shakers", out);
-    assert.equal(out.count, 0);
-    assert.match(String(out.data?.notice), /no entries/i);
-    assert.equal(out.pagination.has_next_page, false);
   });
 });

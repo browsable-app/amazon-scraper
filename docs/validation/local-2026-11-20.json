@@ -1,0 +1,402 @@
+{
+  "recorded_at": "2026-11-20T07:40:38.040Z",
+  "node": "v22.23.4",
+  "headless": true,
+  "proxy": false,
+  "initial_us_run": [
+    {
+      "endpoint": "amazon-search",
+      "input": {
+        "query": "wireless headphones",
+        "limit": 2
+      },
+      "outcome": "failed",
+      "duration_ms": 3046,
+      "error": "Amazon temporarily unavailable (HTTP 503)"
+    },
+    {
+      "endpoint": "amazon-asin",
+      "input": {
+        "asin": "B0C3HCD34R"
+      },
+      "outcome": "failed",
+      "duration_ms": 1216,
+      "error": "Amazon request blocked by an automated access check"
+    },
+    {
+      "endpoint": "amazon-price",
+      "input": {
+        "asin": "B0C3HCD34R"
+      },
+      "outcome": "failed",
+      "duration_ms": 953,
+      "error": "Amazon request blocked by an automated access check"
+    },
+    {
+      "endpoint": "amazon-best-sellers",
+      "input": {
+        "category": "electronics",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 1955
+    },
+    {
+      "endpoint": "amazon-deals",
+      "input": {
+        "query": "coffee grinder",
+        "limit": 2
+      },
+      "outcome": "failed",
+      "duration_ms": 2029,
+      "error": "Amazon temporarily unavailable (HTTP 503)"
+    },
+    {
+      "endpoint": "amazon-product-offers",
+      "input": {
+        "asin": "B0C3HCD34R",
+        "limit": 2
+      },
+      "outcome": "failed",
+      "duration_ms": 757,
+      "error": "Amazon request blocked by an automated access check"
+    },
+    {
+      "endpoint": "amazon-product-variations",
+      "input": {
+        "asin": "B0C3HCD34R",
+        "limit": 2
+      },
+      "outcome": "failed",
+      "duration_ms": 589,
+      "error": "Amazon request blocked by an automated access check"
+    },
+    {
+      "endpoint": "amazon-products-batch",
+      "input": {
+        "asins": [
+          "B0C3HCD34R",
+          "B085DV8T75"
+        ]
+      },
+      "outcome": "failed",
+      "duration_ms": 1048,
+      "error": "Amazon batch failed for all 2 products: Amazon request blocked by an automated access check; Amazon request blocked by an automated access check"
+    },
+    {
+      "endpoint": "amazon-movers-and-shakers",
+      "input": {
+        "category": "electronics",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 0,
+      "duration_ms": 1913
+    },
+    {
+      "endpoint": "amazon-new-releases",
+      "input": {
+        "category": "electronics",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 2090
+    },
+    {
+      "endpoint": "amazon-seller-products",
+      "input": {
+        "seller_id": "A294P4X9EWVXLJ",
+        "limit": 2
+      },
+      "outcome": "failed",
+      "duration_ms": 1973,
+      "error": "Amazon temporarily unavailable (HTTP 503)"
+    },
+    {
+      "endpoint": "amazon-reviews",
+      "input": {
+        "asin": "B0C3HCD34R",
+        "limit": 2
+      },
+      "outcome": "failed",
+      "duration_ms": 690,
+      "error": "Amazon did not expose usable public content (404)"
+    }
+  ],
+  "retained_endpoint_run": [
+    {
+      "endpoint": "amazon-search",
+      "input": {
+        "marketplace": "amazon.co.uk",
+        "query": "kindle",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 2742,
+      "pagination": {
+        "outcome": "passed",
+        "count": 2
+      }
+    },
+    {
+      "endpoint": "amazon-asin",
+      "input": {
+        "marketplace": "amazon.co.uk",
+        "asin": "B0CX8MQF7R"
+      },
+      "outcome": "passed",
+      "count": 1,
+      "duration_ms": 8754
+    },
+    {
+      "endpoint": "amazon-price",
+      "input": {
+        "marketplace": "amazon.co.uk",
+        "asin": "B0CX8MQF7R"
+      },
+      "outcome": "passed",
+      "count": 1,
+      "duration_ms": 4691
+    },
+    {
+      "endpoint": "amazon-best-sellers",
+      "input": {
+        "category": "electronics",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 3288
+    },
+    {
+      "endpoint": "amazon-deals",
+      "input": {
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 3620
+    },
+    {
+      "endpoint": "amazon-product-offers",
+      "input": {
+        "marketplace": "amazon.co.uk",
+        "asin": "B0CX8MQF7R",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 1,
+      "duration_ms": 5622
+    },
+    {
+      "endpoint": "amazon-product-variations",
+      "input": {
+        "marketplace": "amazon.co.uk",
+        "asin": "B0CX8MQF7R",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 1,
+      "duration_ms": 3035
+    },
+    {
+      "endpoint": "amazon-products-batch",
+      "input": {
+        "marketplace": "amazon.co.uk",
+        "asins": [
+          "B0CX8MQF7R",
+          "B0DK8191JG"
+        ]
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 5363
+    },
+    {
+      "endpoint": "amazon-new-releases",
+      "input": {
+        "category": "electronics",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 2056
+    },
+    {
+      "endpoint": "amazon-seller-products",
+      "input": {
+        "marketplace": "amazon.co.uk",
+        "seller_id": "A3P5ROKL5A1OLE",
+        "query": "kindle",
+        "limit": 2
+      },
+      "outcome": "passed",
+      "count": 2,
+      "duration_ms": 2297
+    }
+  ],
+  "additional_checks": [
+    {
+      "endpoint": "movers-and-shakers",
+      "input": {
+        "limit": 2
+      },
+      "count": 0,
+      "ids": [],
+      "notice": "Amazon currently exposes no entries for this category."
+    },
+    {
+      "endpoint": "movers-and-shakers",
+      "input": {
+        "category": "books",
+        "limit": 2
+      },
+      "count": 0,
+      "ids": [],
+      "notice": "Amazon currently exposes no entries for this category."
+    },
+    {
+      "endpoint": "movers-and-shakers",
+      "input": {
+        "category": "kitchen",
+        "limit": 2
+      },
+      "count": 0,
+      "ids": [],
+      "notice": "Amazon currently exposes no entries for this category."
+    },
+    {
+      "endpoint": "reviews",
+      "input": {
+        "asin": "B085DV8T75",
+        "limit": 2
+      },
+      "error": "Amazon request blocked by an automated access check"
+    },
+    {
+      "endpoint": "deals",
+      "input": {
+        "limit": 2
+      },
+      "count": 2,
+      "ids": [
+        "B0DZZWMB2L",
+        "B0DQY65BX6"
+      ]
+    },
+    {
+      "endpoint": "search",
+      "input": {
+        "query": "kindle",
+        "marketplace": "amazon.co.uk",
+        "limit": 2
+      },
+      "count": 2,
+      "ids": [
+        "B0CX8MQF7R",
+        "B0DK8191JG"
+      ],
+      "schema": true
+    },
+    {
+      "endpoint": "product",
+      "input": {
+        "asin": "B0CFPJYX7P",
+        "marketplace": "amazon.co.uk"
+      },
+      "error": "Amazon did not expose usable public content (404)"
+    },
+    {
+      "endpoint": "price",
+      "input": {
+        "asin": "B0CFPJYX7P",
+        "marketplace": "amazon.co.uk"
+      },
+      "error": "Amazon did not expose usable public content (404)"
+    },
+    {
+      "endpoint": "offers",
+      "input": {
+        "asin": "B0CFPJYX7P",
+        "marketplace": "amazon.co.uk",
+        "limit": 2
+      },
+      "error": "Amazon did not expose usable public content (404)"
+    },
+    {
+      "endpoint": "variations",
+      "input": {
+        "asin": "B0CFPJYX7P",
+        "marketplace": "amazon.co.uk",
+        "limit": 2
+      },
+      "error": "Amazon did not expose usable public content (404)"
+    },
+    {
+      "endpoint": "batch",
+      "input": {
+        "asins": [
+          "B0CFPJYX7P",
+          "B0C3HCD34R"
+        ],
+        "marketplace": "amazon.co.uk"
+      },
+      "count": 1,
+      "ids": [
+        "B0C3HCD34R"
+      ],
+      "schema": true
+    },
+    {
+      "endpoint": "seller",
+      "input": {
+        "seller_id": "A294P4X9EWVXLJ",
+        "query": "headphones",
+        "limit": 2
+      },
+      "error": "Amazon temporarily unavailable (HTTP 503)"
+    },
+    {
+      "endpoint": "movers-and-shakers",
+      "input": {
+        "marketplace": "amazon.co.uk",
+        "category": "electronics",
+        "limit": 2
+      },
+      "count": 0,
+      "ids": [],
+      "notice": "Amazon currently exposes no entries for this category.",
+      "schema": true
+    },
+    {
+      "endpoint": "deals",
+      "input": {
+        "marketplace": "amazon.co.uk",
+        "limit": 2
+      },
+      "count": 2,
+      "ids": [
+        "B0D9YDFGHD",
+        "B0F1DGSZPZ"
+      ],
+      "schema": true
+    },
+    {
+      "input": {
+        "marketplace": "amazon.co.uk",
+        "asin": "B0C3HCD34R",
+        "limit": 2
+      },
+      "count": 2,
+      "ids": [
+        "B0C3KWT5V6",
+        "B0HGPNSC3G"
+      ],
+      "has_variations": true,
+      "schema": true
+    }
+  ]
+}

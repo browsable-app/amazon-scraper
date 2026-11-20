@@ -10,7 +10,7 @@ export function normalizePrebuiltTaskInput(source: string, input: Record<string,
       if (!output[name]) problem(name, `${name} must not be blank.`);
     }
   }
-  for (const [alias, target] of [["q", "query"], ["domain", "marketplace"], ["maxResults", "limit"], ["maxReviews", "limit"], ["product_url", "url"]]) {
+  for (const [alias, target] of [["q", "query"], ["domain", "marketplace"], ["maxResults", "limit"], ["product_url", "url"]]) {
     if (output[alias] !== undefined) {
       if (output[target] !== undefined && output[target] !== output[alias]) problem(alias, `Use ${alias} or ${target}; conflicting values were supplied.`);
       else output[target] = output[alias];

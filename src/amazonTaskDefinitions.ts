@@ -204,7 +204,6 @@ export const amazonTaskDefinitions = [
   ...(
     [
       ["best-sellers", "Best Sellers", "best-sellers"],
-      ["movers-and-shakers", "Movers and Shakers", "movers-and-shakers"],
       ["new-releases", "New Releases", "new-releases"],
     ] as const
   ).map(([path, title, builtin]) => ({

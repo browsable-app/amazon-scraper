@@ -1,6 +1,6 @@
 # Amazon Scraper
 
-Scrape Amazon products, prices, offers, variants, product lists, sellers and public reviews with local Playwright Chromium.
+Scrape Amazon products, prices, offers, variants, product lists and sellers with local Playwright Chromium.
 
 **Free source code, MIT licensed. Runs locally without a Browsable account, API key, hosted browser or paid service.** All extraction code is included in this repository.
 
@@ -13,8 +13,8 @@ git clone https://github.com/browsable-app/amazon-scraper.git
 cd amazon-scraper
 npm ci
 npx playwright install chromium
-npm run scrape -- search --query "wireless headphones" --limit 20
-npm run scrape -- product --asin B0C3HCD34R
+npm run scrape -- search --marketplace amazon.co.uk --query "kindle" --limit 2
+npm run scrape -- product --marketplace amazon.co.uk --asin B0CX8MQF7R
 ```
 
 On Linux, install Chromium's system dependencies with `npx playwright install --with-deps chromium`.
@@ -33,10 +33,8 @@ Amazon may show access checks, require sign-in, or return different content depe
 | `offers` | `amazon/product/offers` | Seller offers, condition, shipping and featured-offer status |
 | `variations` | `amazon/product/variations` | Child ASINs and attributes; optional product details |
 | `batch` | `amazon/products/batch` | Up to ten ASINs, with individual product errors |
-| `movers-and-shakers` | `amazon/movers-and-shakers` | Products gaining sales rank |
 | `new-releases` | `amazon/new-releases` | Ranked new releases |
 | `seller` | `amazon/seller/products` | A seller's public product catalogue |
-| `reviews` | `amazon/reviews` | Public review listings or featured product-page reviews |
 
 These are local operations. This repository does not start an HTTP server. The CLI and library also accept endpoint paths and full names such as `amazon-product-offers`.
 
@@ -50,10 +48,8 @@ npm run scrape -- variations --asin B0C3HCD34R --include-details --limit 5
 npm run scrape -- batch --asins B0C3HCD34R,B085DV8T75
 npm run scrape -- best-sellers --category electronics --limit 10
 npm run scrape -- new-releases --category electronics --limit 10
-npm run scrape -- movers-and-shakers --category electronics --limit 10
 npm run scrape -- deals --query "coffee grinder" --limit 10
 npm run scrape -- seller --seller-id A294P4X9EWVXLJ --limit 10
-npm run scrape -- reviews --asin B0C3HCD34R --limit 10
 ```
 
 See the [endpoint reference](docs/ENDPOINTS.md) for fields and limits.
@@ -65,7 +61,7 @@ npm run scrape -- search --query headphones --limit 10 --output products.json
 npm run scrape -- search --query headphones --limit 10 --format csv --output products.csv
 ```
 
-JSON includes results, marketplace and delivery metadata, pagination, and per-product errors where applicable. CSV exports the result rows; nested fields are JSON strings. Review coverage notices and partial-batch errors are also written to stderr when exporting CSV.
+JSON includes results, marketplace and delivery metadata, pagination, and per-product errors where applicable. CSV exports the result rows; nested fields are JSON strings. Partial-batch errors are also written to stderr when exporting CSV.
 
 For machine-readable stdout without npm's command banner, build and run the CLI directly:
 
@@ -127,9 +123,7 @@ Set `--marketplace amazon.de` or supply a product URL. The URL and explicit mark
 
 Prices retain the displayed text and include a normalized decimal string and currency when available. A recognized displayed currency overrides the marketplace default. Missing prices remain `null`. Shipping totals remain `null` when shipping depends on order value, membership, or another unknown condition.
 
-## Reviews and partial results
-
-Amazon often requires sign-in for full review listings. If the listing redirects to sign-in or has no usable review content, the scraper tries the product's own featured reviews directly. Such results have `data.coverage: "featured_reviews"` and a notice explaining that they are a subset. Featured reviews have no continuation cursor. No external reader service is used.
+## Partial results
 
 Batch runs report failed products in `data.errors`; an all-failed batch raises an error. Variation detail failures are also reported in `data.errors`.
 
@@ -154,7 +148,7 @@ npm test
 npm run smoke
 ```
 
-Tests use local Chromium and intercepted fixture responses. `npm run smoke` makes real Amazon requests for all twelve operations, checks output contracts, exercises search continuation when available, and writes `output/live-validation.json`. It exits nonzero if any check fails. Use `npm run smoke -- --only=amazon-search` to select checks, or add `--headed`.
+Tests use local Chromium and intercepted fixture responses. `npm run smoke` makes real Amazon requests for all ten operations, requires at least one result per operation, checks output contracts, exercises search continuation when available, and writes `output/live-validation.json`. It exits nonzero if any check fails. Use `npm run smoke -- --only=amazon-search` to select checks, or add `--headed`.
 
 ## Maintenance and license
 
